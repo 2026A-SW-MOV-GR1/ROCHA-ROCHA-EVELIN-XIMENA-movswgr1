@@ -1,3 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
+    <string name="saludo">Hola Mundo </string>
+    <color name="color_texto_taller">#DCC6C6</color> <!-- Rojo -->
+    <color name="color_fondo_taller">#574040</color> <!-- Blanco -->
 </resources>
