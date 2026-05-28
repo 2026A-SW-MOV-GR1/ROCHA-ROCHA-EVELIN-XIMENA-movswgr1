@@ -1,0 +1,30 @@
+<resources>
+    <string name="app_name">Red y Seguridad</string>
+
+    <!-- Bottom Navigation -->
+    <string name="nav_rest">REST API</string>
+    <string name="nav_storage">Almacenamiento</string>
+
+    <!-- REST Fragment -->
+    <string name="hint_post_id">ID del Post (1–100)</string>
+    <string name="btn_get">GET</string>
+    <string name="btn_put">PUT (Actualizar)</string>
+    <string name="hint_new_title">Nuevo título</string>
+    <string name="hint_new_body">Nuevo cuerpo</string>
+    <string name="label_title">Título:</string>
+    <string name="label_body">Cuerpo:</string>
+    <string name="section_get">Consultar Post</string>
+    <string name="section_put">Actualizar Post</string>
+    <string name="status_idle">Ingresa un ID y pulsa GET</string>
+
+    <!-- Storage Fragment -->
+    <string name="section_mechanism">Mecanismo de almacenamiento</string>
+    <string name="btn_shared_prefs">SharedPrefs</string>
+    <string name="btn_datastore">DataStore</string>
+    <string name="btn_encrypted">Encrypted</string>
+    <string name="hint_key">Clave</string>
+    <string name="hint_value">Valor</string>
+    <string name="btn_save">Guardar</string>
+    <string name="btn_retrieve">Recuperar</string>
+    <string name="label_result">Resultado:</string>
+</resources>
