@@ -1,7 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
 <resources xmlns:tools="http://schemas.android.com/tools">
-    <!-- Base application theme. -->
-    <style name="Base.Theme.AndroidNativoWebView" parent="Theme.Material3.DayNight.NoActionBar">
-        <!-- Customize your dark theme here. -->
-        <!-- <item name="colorPrimary">@color/my_dark_primary</item> -->
+    <style name="Base.Theme.DuolingoClone" parent="Theme.Material3.DayNight.NoActionBar">
+        <item name="colorPrimary">@color/duo_green</item>
+        <item name="colorPrimaryDark">@color/duo_green_dark</item>
+        <item name="colorAccent">@color/duo_yellow</item>
     </style>
 </resources>

@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/duo_bg">
+
+    <!-- ── Header ──────────────────────────────────────── -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="@color/duo_white"
+        android:paddingHorizontal="16dp"
+        android:paddingTop="16dp"
+        android:paddingBottom="12dp"
+        android:elevation="4dp">
+
+        <!-- Fila superior: bandera + racha + XP + vidas -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="🇺🇸"
+                android:textSize="28sp" />
+
+            <View android:layout_width="0dp" android:layout_height="1dp" android:layout_weight="1" />
+
+            <!-- Racha -->
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center_vertical"
+                android:background="@drawable/bg_badge"
+                android:paddingHorizontal="12dp"
+                android:paddingVertical="6dp">
+                <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                    android:text="🔥" android:textSize="16sp" />
+                <TextView
+                    android:id="@+id/tvStreakCount"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="7"
+                    android:textSize="14sp"
+                    android:textStyle="bold"
+                    android:textColor="@color/duo_orange"
+                    android:layout_marginStart="4dp" />
+            </LinearLayout>
+
+            <!-- XP -->
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center_vertical"
+                android:layout_marginStart="8dp"
+                android:background="@drawable/bg_badge"
+                android:paddingHorizontal="12dp"
+                android:paddingVertical="6dp">
+                <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                    android:text="⚡" android:textSize="16sp" />
+                <TextView
+                    android:id="@+id/tvXpCount"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="65"
+                    android:textSize="14sp"
+                    android:textStyle="bold"
+                    android:textColor="@color/duo_yellow_dark"
+                    android:layout_marginStart="4dp" />
+            </LinearLayout>
+
+            <!-- Vidas -->
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center_vertical"
+                android:layout_marginStart="8dp"
+                android:background="@drawable/bg_badge"
+                android:paddingHorizontal="12dp"
+                android:paddingVertical="6dp">
+                <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                    android:text="❤️" android:textSize="16sp" />
+                <TextView
+                    android:id="@+id/tvHeartsCount"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="5"
+                    android:textSize="14sp"
+                    android:textStyle="bold"
+                    android:textColor="@color/duo_red"
+                    android:layout_marginStart="4dp" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <!--
+             ══════════════════════════════════════════════════════════
+             FASE C – PROPUESTA DE MEJORA:
+             Barra de Meta Diaria siempre visible en el header.
+             Problema original: Duolingo oculta el progreso XP diario
+             detrás de varios taps. Muchos usuarios pierden su racha por
+             no saber cuánto XP les falta.
+             Solución: barra de progreso persistente + texto de avance.
+             ══════════════════════════════════════════════════════════
+        -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginTop="12dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center_vertical">
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="⚡ Meta Diaria"
+                    android:textSize="12sp"
+                    android:textStyle="bold"
+                    android:textColor="@color/duo_text_dark" />
+                <TextView
+                    android:id="@+id/tvDailyGoalProgress"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="65 / 100 XP"
+                    android:textSize="12sp"
+                    android:textColor="@color/duo_green"
+                    android:textStyle="bold" />
+            </LinearLayout>
+
+            <ProgressBar
+                android:id="@+id/progressDailyGoal"
+                style="?android:attr/progressBarStyleHorizontal"
+                android:layout_width="match_parent"
+                android:layout_height="10dp"
+                android:layout_marginTop="6dp"
+                android:progress="65"
+                android:max="100"
+                android:progressTint="@color/duo_green"
+                android:progressBackgroundTint="@color/duo_border" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <!-- ── Lista 1: Ruta de lecciones (RecyclerView) ── -->
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rvLessons"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:clipToPadding="false"
+        android:paddingTop="8dp"
+        android:paddingBottom="16dp" />
+
+</LinearLayout>

@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/duo_bg">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <!-- ── Encabezado de perfil ──────────────────────────── -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:background="@color/duo_white"
+            android:gravity="center_horizontal"
+            android:paddingHorizontal="16dp"
+            android:paddingVertical="24dp"
+            android:elevation="4dp">
+
+            <!-- Avatar grande -->
+            <androidx.cardview.widget.CardView
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                app:cardCornerRadius="40dp"
+                app:cardElevation="4dp"
+                app:cardBackgroundColor="@color/avatar_purple">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:text="ER"
+                    android:textSize="26sp"
+                    android:textStyle="bold"
+                    android:textColor="@color/duo_white" />
+            </androidx.cardview.widget.CardView>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Evelin Rocha"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:textColor="@color/duo_text_dark"
+                android:layout_marginTop="12dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@evelinrocha"
+                android:textSize="13sp"
+                android:textColor="@color/duo_text_gray"
+                android:layout_marginTop="2dp" />
+
+            <!-- Fila de estadísticas -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center"
+                android:layout_marginTop="20dp">
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="vertical"
+                    android:gravity="center">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="7"
+                        android:textSize="24sp"
+                        android:textStyle="bold"
+                        android:textColor="@color/duo_orange" />
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="🔥 Racha"
+                        android:textSize="11sp"
+                        android:textColor="@color/duo_text_gray" />
+                </LinearLayout>
+
+                <View android:layout_width="1dp" android:layout_height="40dp" android:background="@color/duo_border" />
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="vertical"
+                    android:gravity="center">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="3210"
+                        android:textSize="24sp"
+                        android:textStyle="bold"
+                        android:textColor="@color/duo_yellow_dark" />
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="⚡ XP Total"
+                        android:textSize="11sp"
+                        android:textColor="@color/duo_text_gray" />
+                </LinearLayout>
+
+                <View android:layout_width="1dp" android:layout_height="40dp" android:background="@color/duo_border" />
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="vertical"
+                    android:gravity="center">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="ORO"
+                        android:textSize="20sp"
+                        android:textStyle="bold"
+                        android:textColor="@color/duo_yellow_dark" />
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="🏆 Liga"
+                        android:textSize="11sp"
+                        android:textColor="@color/duo_text_gray" />
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+
+        <!-- ── Encabezado sección Logros ──────────── -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:paddingHorizontal="16dp"
+            android:paddingTop="20dp"
+            android:paddingBottom="8dp">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/achievements_title"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:textColor="@color/duo_text_dark" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/achievements_count"
+                android:textSize="13sp"
+                android:textColor="@color/duo_text_gray"
+                android:layout_marginStart="4dp"
+                android:gravity="bottom" />
+        </LinearLayout>
+
+        <!-- ── Lista 3: Logros (RecyclerView) ──────── -->
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/rvAchievements"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:nestedScrollingEnabled="false"
+            android:clipToPadding="false"
+            android:paddingBottom="24dp" />
+    </LinearLayout>
+
+</androidx.core.widget.NestedScrollView>

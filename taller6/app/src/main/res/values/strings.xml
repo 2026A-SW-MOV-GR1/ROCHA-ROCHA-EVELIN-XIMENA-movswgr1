@@ -1,3 +1,15 @@
 <resources>
-    <string name="app_name">AndroidNativoWebView</string>
+    <string name="app_name">DuolingoClone</string>
+    <string name="nav_home">Inicio</string>
+    <string name="nav_league">Liga</string>
+    <string name="nav_profile">Perfil</string>
+    <string name="daily_goal_label">Meta Diaria</string>
+    <string name="streak_label">Racha</string>
+    <string name="xp_label">XP Total</string>
+    <string name="league_gold">Liga de Oro</string>
+    <string name="league_subtitle">Top 10 avanzan · 5 días restantes</string>
+    <string name="achievements_title">Logros</string>
+    <string name="achievements_count">(5/12 desbloqueados)</string>
+    <string name="promotion_zone">ZONA DE ASCENSO</string>
+    <string name="demotion_zone">ZONA DE DESCENSO</string>
 </resources>

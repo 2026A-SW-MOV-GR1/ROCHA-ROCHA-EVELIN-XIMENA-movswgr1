@@ -1,5 +1,47 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
+    <!-- Duolingo Brand Colors (Fase A - Psicología del Color) -->
+    <!-- Verde primario: transmite aprendizaje, progreso y naturaleza -->
+    <color name="duo_green">#58CC02</color>
+    <color name="duo_green_dark">#46A302</color>
+    <color name="duo_green_light">#D7FFB8</color>
+
+    <!-- Amarillo: energía, logro y recompensa -->
+    <color name="duo_yellow">#FFD900</color>
+    <color name="duo_yellow_dark">#CE9C00</color>
+
+    <!-- Rojo: alerta, corazones perdidos, urgencia -->
+    <color name="duo_red">#FF4B4B</color>
+
+    <!-- Azul: confianza, progreso de logros -->
+    <color name="duo_blue">#1CB0F6</color>
+
+    <!-- Púrpura: creatividad, premium -->
+    <color name="duo_purple">#CE82FF</color>
+
+    <!-- Naranja: racha (streak), entusiasmo -->
+    <color name="duo_orange">#FF9600</color>
+
+    <!-- Neutrales -->
+    <color name="duo_white">#FFFFFF</color>
+    <color name="duo_bg">#F7F7F7</color>
+    <color name="duo_border">#E5E5E5</color>
+    <color name="duo_text_dark">#3C3C3C</color>
+    <color name="duo_text_gray">#AFAFAF</color>
+
+    <!-- Ligas -->
+    <color name="league_gold">#FFD900</color>
+    <color name="league_silver">#C0C0C0</color>
+    <color name="league_bronze">#CD7F32</color>
+
+    <!-- Colores de avatares -->
+    <color name="avatar_green">#58CC02</color>
+    <color name="avatar_blue">#1CB0F6</color>
+    <color name="avatar_purple">#CE82FF</color>
+    <color name="avatar_orange">#FF9600</color>
+    <color name="avatar_red">#FF4B4B</color>
+
+    <!-- Legado -->
     <color name="black">#FF000000</color>
     <color name="white">#FFFFFFFF</color>
 </resources>

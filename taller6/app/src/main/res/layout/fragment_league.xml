@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/duo_bg">
+
+    <!-- ── Encabezado de Liga ──────────────────── -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="@color/duo_white"
+        android:gravity="center_horizontal"
+        android:paddingHorizontal="16dp"
+        android:paddingVertical="20dp"
+        android:elevation="4dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="🏆"
+            android:textSize="52sp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/league_gold"
+            android:textSize="22sp"
+            android:textStyle="bold"
+            android:textColor="@color/duo_yellow_dark"
+            android:layout_marginTop="6dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/league_subtitle"
+            android:textSize="13sp"
+            android:textColor="@color/duo_text_gray"
+            android:layout_marginTop="4dp" />
+
+        <!-- Indicador Zona de Ascenso -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            android:layout_marginTop="14dp">
+            <View
+                android:layout_width="0dp"
+                android:layout_height="2dp"
+                android:layout_weight="1"
+                android:background="@color/duo_green" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="  ZONA DE ASCENSO  "
+                android:textSize="10sp"
+                android:textColor="@color/duo_green"
+                android:textStyle="bold" />
+            <View
+                android:layout_width="0dp"
+                android:layout_height="2dp"
+                android:layout_weight="1"
+                android:background="@color/duo_green" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <!-- ── Lista 2: Tabla de clasificación (RecyclerView) ── -->
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rvLeaderboard"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:clipToPadding="false"
+        android:paddingTop="4dp"
+        android:paddingBottom="16dp"
+        android:background="@color/duo_white" />
+
+</LinearLayout>

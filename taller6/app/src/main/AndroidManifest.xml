@@ -2,30 +2,6 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools">
 
-    <!-- ── Permisos ──────────────────────────────────────────────── -->
-    <!-- Necesario para lanzar MediaStore.ACTION_IMAGE_CAPTURE -->
-    <uses-permission android:name="android.permission.CAMERA" />
-
-    <!--
-        Android 11+ (API 30+) requiere declarar qué intents se van a resolver
-        con resolveActivity(). Sin este bloque, resolveActivity() siempre
-        devuelve null aunque haya una cámara instalada.
-    -->
-    <queries>
-        <intent>
-            <action android:name="android.media.action.IMAGE_CAPTURE" />
-        </intent>
-        <intent>
-            <action android:name="android.intent.action.DIAL" />
-        </intent>
-    </queries>
-
-    <!-- Declara la característica como opcional para que la app se
-         instale también en dispositivos sin cámara trasera -->
-    <uses-feature
-        android:name="android.hardware.camera"
-        android:required="false" />
-
     <application
         android:allowBackup="true"
         android:dataExtractionRules="@xml/data_extraction_rules"
@@ -34,42 +10,16 @@
         android:label="@string/app_name"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
-        android:theme="@style/Theme.AndroidNativoWebView"
+        android:theme="@style/Theme.DuolingoClone"
         tools:targetApi="31">
 
         <activity
             android:name=".MainActivity"
-            android:exported="true"
-            android:launchMode="singleTop">
-            <!--
-                launchMode="singleTop" es CRÍTICO para el Módulo 2.
-                Cuando la app ya está en primer plano y llega un Intent
-                entrante, Android llama a onNewIntent() en lugar de crear
-                una nueva instancia, evitando crashes o estado inconsistente.
-            -->
-
-            <!-- Intent filter 1: lanzador normal desde el menú de apps -->
+            android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
-
-            <!-- Intent filter 2: recibir texto compartido desde otras apps
-                 (Módulo 2 – Receptor de texto) -->
-            <intent-filter>
-                <action android:name="android.intent.action.SEND" />
-                <category android:name="android.intent.category.DEFAULT" />
-                <data android:mimeType="text/plain" />
-            </intent-filter>
-
-            <!-- Intent filter 3: recibir imágenes compartidas desde otras apps
-                 (Módulo 2 – Receptor de imagen) -->
-            <intent-filter>
-                <action android:name="android.intent.action.SEND" />
-                <category android:name="android.intent.category.DEFAULT" />
-                <data android:mimeType="image/*" />
-            </intent-filter>
-
         </activity>
     </application>
 
