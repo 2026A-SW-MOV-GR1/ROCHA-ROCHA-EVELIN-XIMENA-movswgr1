@@ -71,7 +71,7 @@ Duolingo aplica la teoría del **Color Hedónico**: verde para el placer del log
 ## 4. Arquitectura del Proyecto
 
 ```
-com.example.androidnativowebview/
+com.example.duolingoclone/
 ├── data/
 │   ├── model/
 │   │   ├── Lesson.kt          ← data class + enum LessonType

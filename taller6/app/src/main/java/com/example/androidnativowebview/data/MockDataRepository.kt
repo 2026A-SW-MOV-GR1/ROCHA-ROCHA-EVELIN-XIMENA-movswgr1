@@ -1,10 +1,10 @@
-package com.example.androidnativowebview.data
+package com.example.duolingoclone.data
 
-import com.example.androidnativowebview.R
-import com.example.androidnativowebview.data.model.Achievement
-import com.example.androidnativowebview.data.model.LeaderboardUser
-import com.example.androidnativowebview.data.model.Lesson
-import com.example.androidnativowebview.data.model.LessonType
+import com.example.duolingoclone.R
+import com.example.duolingoclone.data.model.Achievement
+import com.example.duolingoclone.data.model.LeaderboardUser
+import com.example.duolingoclone.data.model.Lesson
+import com.example.duolingoclone.data.model.LessonType
 
 object MockDataRepository {
 

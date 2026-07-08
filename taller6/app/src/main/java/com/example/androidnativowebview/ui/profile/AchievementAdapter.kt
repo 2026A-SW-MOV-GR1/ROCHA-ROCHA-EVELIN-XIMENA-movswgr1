@@ -1,4 +1,4 @@
-package com.example.androidnativowebview.ui.profile
+package com.example.duolingoclone.ui.profile
 
 import android.view.LayoutInflater
 import android.view.View
@@ -7,9 +7,9 @@ import androidx.core.content.ContextCompat
 import androidx.recyclerview.widget.DiffUtil
 import androidx.recyclerview.widget.ListAdapter
 import androidx.recyclerview.widget.RecyclerView
-import com.example.androidnativowebview.R
-import com.example.androidnativowebview.data.model.Achievement
-import com.example.androidnativowebview.databinding.ItemAchievementBinding
+import com.example.duolingoclone.R
+import com.example.duolingoclone.data.model.Achievement
+import com.example.duolingoclone.databinding.ItemAchievementBinding
 
 class AchievementAdapter :
     ListAdapter<Achievement, AchievementAdapter.AchievementViewHolder>(AchievementDiffCallback()) {

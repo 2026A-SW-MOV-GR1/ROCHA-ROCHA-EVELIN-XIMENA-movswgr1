@@ -1,4 +1,4 @@
-package com.example.androidnativowebview.ui.home
+package com.example.duolingoclone.ui.home
 
 import android.animation.AnimatorSet
 import android.animation.ObjectAnimator
@@ -10,9 +10,9 @@ import androidx.core.content.ContextCompat
 import androidx.recyclerview.widget.DiffUtil
 import androidx.recyclerview.widget.ListAdapter
 import androidx.recyclerview.widget.RecyclerView
-import com.example.androidnativowebview.R
-import com.example.androidnativowebview.data.model.Lesson
-import com.example.androidnativowebview.databinding.ItemLessonBinding
+import com.example.duolingoclone.R
+import com.example.duolingoclone.data.model.Lesson
+import com.example.duolingoclone.databinding.ItemLessonBinding
 
 class LessonAdapter : ListAdapter<Lesson, LessonAdapter.LessonViewHolder>(LessonDiffCallback()) {
 

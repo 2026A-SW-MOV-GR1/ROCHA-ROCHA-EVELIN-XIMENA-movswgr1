@@ -1,4 +1,4 @@
-package com.example.androidnativowebview.ui.home
+package com.example.duolingoclone.ui.home
 
 import android.os.Bundle
 import android.view.LayoutInflater
@@ -6,8 +6,8 @@ import android.view.View
 import android.view.ViewGroup
 import androidx.fragment.app.Fragment
 import androidx.recyclerview.widget.LinearLayoutManager
-import com.example.androidnativowebview.data.MockDataRepository
-import com.example.androidnativowebview.databinding.FragmentHomeBinding
+import com.example.duolingoclone.data.MockDataRepository
+import com.example.duolingoclone.databinding.FragmentHomeBinding
 
 class HomeFragment : Fragment() {
 

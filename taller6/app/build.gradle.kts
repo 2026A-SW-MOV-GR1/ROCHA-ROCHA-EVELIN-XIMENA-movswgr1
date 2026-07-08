@@ -4,7 +4,7 @@ plugins {
 }
 
 android {
-    namespace = "com.example.androidnativowebview"
+    namespace = "com.example.duolingoclone"
     compileSdk {
         version = release(36) {
             minorApiLevel = 1
@@ -12,7 +12,7 @@ android {
     }
 
     defaultConfig {
-        applicationId = "com.example.androidnativowebview"
+        applicationId = "com.example.duolingoclone"
         minSdk = 28
         targetSdk = 36
         versionCode = 1

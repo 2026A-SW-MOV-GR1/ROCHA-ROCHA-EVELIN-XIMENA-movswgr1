@@ -1,4 +1,4 @@
-package com.example.androidnativowebview.ui.league
+package com.example.duolingoclone.ui.league
 
 import android.os.Bundle
 import android.view.LayoutInflater
@@ -7,8 +7,8 @@ import android.view.ViewGroup
 import androidx.fragment.app.Fragment
 import androidx.recyclerview.widget.DividerItemDecoration
 import androidx.recyclerview.widget.LinearLayoutManager
-import com.example.androidnativowebview.data.MockDataRepository
-import com.example.androidnativowebview.databinding.FragmentLeagueBinding
+import com.example.duolingoclone.data.MockDataRepository
+import com.example.duolingoclone.databinding.FragmentLeagueBinding
 
 class LeagueFragment : Fragment() {
 

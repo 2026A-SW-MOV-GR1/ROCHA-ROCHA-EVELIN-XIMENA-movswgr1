@@ -1,4 +1,4 @@
-package com.example.androidnativowebview
+package com.example.duolingoclone
 
 import org.junit.Test
 

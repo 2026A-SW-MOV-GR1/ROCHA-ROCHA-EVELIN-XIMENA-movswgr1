@@ -1,12 +1,12 @@
-package com.example.androidnativowebview
+package com.example.duolingoclone
 
 import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
 import androidx.fragment.app.Fragment
-import com.example.androidnativowebview.databinding.ActivityMainBinding
-import com.example.androidnativowebview.ui.home.HomeFragment
-import com.example.androidnativowebview.ui.league.LeagueFragment
-import com.example.androidnativowebview.ui.profile.ProfileFragment
+import com.example.duolingoclone.databinding.ActivityMainBinding
+import com.example.duolingoclone.ui.home.HomeFragment
+import com.example.duolingoclone.ui.league.LeagueFragment
+import com.example.duolingoclone.ui.profile.ProfileFragment
 
 /**
  * Taller 6 – Native UI Re-Engineering & UX Analysis

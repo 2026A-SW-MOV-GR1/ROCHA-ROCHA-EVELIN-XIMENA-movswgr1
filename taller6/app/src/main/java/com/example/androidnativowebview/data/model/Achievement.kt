@@ -1,4 +1,4 @@
-package com.example.androidnativowebview.data.model
+package com.example.duolingoclone.data.model
 
 data class Achievement(
     val id: Int,
