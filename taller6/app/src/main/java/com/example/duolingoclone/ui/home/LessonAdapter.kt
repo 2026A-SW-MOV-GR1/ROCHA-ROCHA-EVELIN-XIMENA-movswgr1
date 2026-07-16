@@ -95,13 +95,18 @@ class LessonAdapter : ListAdapter<Lesson, LessonAdapter.LessonViewHolder>(Lesson
         // Micro-animación: pulso sutil para indicar "aquí debes continuar"
         private fun pulseAnimation(view: View) {
             view.clearAnimation()
-            val sx = ObjectAnimator.ofFloat(view, "scaleX", 1f, 1.04f, 1f)
-            val sy = ObjectAnimator.ofFloat(view, "scaleY", 1f, 1.04f, 1f)
-            AnimatorSet().apply {
-                playTogether(sx, sy)
+            val sx = ObjectAnimator.ofFloat(view, "scaleX", 1f, 1.04f, 1f).apply {
+                repeatCount = ObjectAnimator.INFINITE
                 duration = 1400
                 interpolator = AccelerateDecelerateInterpolator()
+            }
+            val sy = ObjectAnimator.ofFloat(view, "scaleY", 1f, 1.04f, 1f).apply {
                 repeatCount = ObjectAnimator.INFINITE
+                duration = 1400
+                interpolator = AccelerateDecelerateInterpolator()
+            }
+            AnimatorSet().apply {
+                playTogether(sx, sy)
                 start()
             }
         }
